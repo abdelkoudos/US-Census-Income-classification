@@ -5,7 +5,7 @@ This project aims to predict whether an individual earns more than $50K per year
 
 ## Data
 The dataset includes the following features:
-- **Age**, **Workclass**, **Education**, **Occupation**, **Race**, **Gender**, **Capital Gain**, **Capital Loss**, **Hours per Week**, **Native Country**.
+- **Age**, **Workclass**, **Education**, **Occupation**, **Race**, **Gender**, **Capital Gain**, **Capital Loss**, **Hours per Week**, **Native Country**, **Income value**.
 - **Target**: Income (0 = less than 50K, 1 = more than 50K).
 
 ## Data Cleaning
@@ -13,12 +13,12 @@ The dataset includes the following features:
 - **Missing Values**: Handled through imputation or removal.
 - **Outliers**: Extreme values (e.g., hours worked per week) were cleaned to ensure data consistency.
 - **Feature Encoding**: Categorical variables were one-hot encoded, and numerical features were standardized.
-- **Removed income_value**: Highly correlated with target so it will lead to data leakage.
+- **Removed income value**: Highly correlated with target so it will lead to data leakage. just used it in some analysis not in the ML part.
 
 ## EDA (Exploratory Data Analysis)
 - **Chi-Square Test**: Evaluated relationships between categorical features and income.
-- **ANOVA**: Analyzed how factors like education and age influenced income levels.
-- **Correlation**: Investigated relationships between continuous features like age, capital gain, and income.
+- **ANOVA**: Analyzed how factors like education and age influenced income value levels (the continouous one).
+- **Correlation**: Investigated relationships between continuous features like age, capital gain, and income value.
 
 ## Model
 - **Algorithms Used**: Logistic Regression, Random Forest, and XGBoost.
